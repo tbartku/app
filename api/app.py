@@ -8,7 +8,7 @@ CORS(app)
 
 @app.route('/')
 def index():
-    return jsonify({'name': 'alice',
-                    'email': 'alice@outlook.com'})
-
+#    return jsonify({'name': 'alice',
+#                    'email': 'alice@outlook.com'})
+    return jsonify({'number' : '0'})
 app.run()
