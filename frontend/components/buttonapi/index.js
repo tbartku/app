@@ -5,16 +5,18 @@ class Welcome extends React.Component {
         super(props);
         this.state = {number: "1"};
 
-        this.setState = this.setState.bind(this);
+        //this.setState = this.setState.bind(this);
       }
     
     callapi = () => {
-        fetch('http://127.0.0.1:5000');
-        console.log("Call api is running when clicked")
+        //fetch('http://127.0.0.1:5000')
+        //.then((response) => response.json())
+				  //.then((data) => console.log(data))
+        //console.log("Call api is running when clicked")
         
 // fill in code // this.setState({number: })
-      this.state = {data: " "};
-      this.setState = this.setState.bind(this);
+      //this.state = {number: " "};
+        this.setState({number: "0"})
 
      // const {number} = this.state
     }
