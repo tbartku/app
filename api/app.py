@@ -10,5 +10,5 @@ CORS(app)
 def index():
 #    return jsonify({'name': 'alice',
 #                    'email': 'alice@outlook.com'})
-    return jsonify({'number' : '0'})
+    return jsonify({'number' : '3'})
 app.run()

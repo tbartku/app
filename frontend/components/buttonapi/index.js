@@ -4,25 +4,33 @@ class Welcome extends React.Component {
     constructor(props) {
         super(props);
         this.state = {number: "1"};
-
-        //this.setState = this.setState.bind(this);
       }
     
     callapi = () => {
-        //fetch('http://127.0.0.1:5000')
-        //.then((response) => response.json())
-				  //.then((data) => console.log(data))
-        //console.log("Call api is running when clicked")
-        
-// fill in code // this.setState({number: })
-      //this.state = {number: " "};
-        this.setState({number: "0"})
+      
+      var obj;
 
-     // const {number} = this.state
+fetch('http://127.0.0.1:5000')
+  .then(res => res.json())
+  .then(data => {
+    obj = data;
+   })
+  .then(() => {
+    console.log("below is obj from fetch, line 20 and 21 next");
+    console.log(obj);
+    console.log(obj.number);
+    this.setState({number: obj.number}) // need to set state in local scope of function or obj will be undefined
+   });
+
+        console.log("Call api is running when clicked line 26 is below")
+        console.log(this.state)
+        console.log("above is set state from obj after click, wait for rendering")
     }
     
     render() {
         const {number} = this.state
+        console.log("rendering line 33 is below")
+        console.log(this.state)
       return (
         <div>
             <button onClick={this.callapi}>Click to change the number below!</button>
