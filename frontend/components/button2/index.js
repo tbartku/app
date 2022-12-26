@@ -15,7 +15,7 @@ class Welcome2 extends React.Component {
   
       render() {
         const {number} = this.state
-        console.log("rendering line 12 is below")
+        console.log("rendering line 19 is below")
         console.log(this.state)
       return (
         <div>

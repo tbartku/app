@@ -35,7 +35,7 @@ callapi = () => {
             obj = data
           })
           .then(() => {
-              console.log("below is obj from fetch, line 40 and 41 next");
+              console.log("below is obj from fetch, line 39 and 40 next");
               console.log(obj)
               console.log(obj.number)
               this.setState({number: obj.number}) // need to set state in local scope of function or obj will be undefined
@@ -65,7 +65,7 @@ callapi = () => {
     
     render() {
         const {number} = this.state
-        console.log("rendering line 70 is below")
+        console.log("rendering line 69 is below")
         console.log(this.state)
       return (
         <div>
