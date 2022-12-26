@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Welcome from '../components/buttonapi'
+import Welcome2 from '../components/button2'
 
 export default function Home() {
   return (
@@ -18,6 +19,10 @@ export default function Home() {
         </h1>
         <div>
           <Welcome
+          />
+          </div>
+          <div>
+          <Welcome2
           />
         </div>
       </main>
